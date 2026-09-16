@@ -1,0 +1,294 @@
+/* 
+   ==========================================================================
+   Country Detail Pages Stylesheet - World Cup Podium
+   Modern Glassmorphism & Responsive layout
+   ========================================================================== */
+
+/* Base Reset & Variables */
+:root {
+    --text-color: #f7fafc;
+    --text-muted: #cbd5e0;
+    --glass-bg: rgba(255, 255, 255, 0.08);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --glass-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.25);
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* Country-Specific Custom Gradients and Accent Colors */
+body.spain-page {
+    background: linear-gradient(135deg, #5c0612, #aa1a30, #d08713);
+    --accent-color: #ffd700;
+}
+
+body.argentina-page {
+    background: linear-gradient(135deg, #102a43, #243b53, #486581);
+    --accent-color: #74b9ff;
+}
+
+body.england-page {
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    --accent-color: #ff3333;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    backdrop-filter: blur(8px);
+    transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.back-btn:hover {
+    background: var(--text-color);
+    color: #1a202c;
+    transform: translateX(-5px);
+    box-shadow: 0 6px 15px rgba(255,255,255,0.2);
+}
+
+/* Glass Card */
+.glass-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: var(--glass-shadow);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* Header Section */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 25px;
+}
+
+.flag {
+    width: 80px;
+    height: 53px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.title-area h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.sub-title {
+    font-size: 1rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 4px;
+}
+
+/* Stats/Grid Info Section */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.stat-item {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    transition: transform var(--transition-speed);
+}
+
+.stat-item:hover {
+    transform: translateY(-4px);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.stat-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+/* Star Icons for titles */
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-top: 4px;
+    letter-spacing: 2px;
+}
+
+/* Narrative/Content Block */
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 1.7;
+    font-size: 1.05rem;
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    border-left: 4px solid var(--accent-color);
+    padding-left: 12px;
+    margin: 0 0 10px 0;
+}
+
+.content-section p {
+    margin: 0;
+    color: var(--text-muted);
+    text-align: justify;
+}
+
+/* Image Gallery Grid */
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery-section h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    border-left: 4px solid var(--accent-color);
+    padding-left: 12px;
+    margin: 0 0 10px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 160px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 2px solid var(--glass-border);
+    transition: all var(--transition-speed) ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+    pointer-events: none;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05) translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    z-index: 5;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover::after {
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .title-area h1 {
+        font-size: 2rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery-item {
+        height: 200px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
