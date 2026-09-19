@@ -3,50 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Cup Podium</title>
+    <title>World Cup Podium — Pódio Final</title>
+    <meta name="description" content="O pódio final da Copa do Mundo FIFA 2026: Espanha campeã, Argentina vice-campeã e Inglaterra em terceiro lugar.">
+    <meta name="theme-color" content="#08080A">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2308080A'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23D9B463' stroke-width='2'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <div class="podium">
-            <!-- Second Place -->
-            <a href="argentina.html" class="team">
-                <div class="carousel">
-                    <img src="./assets/argentina1.jpg" alt="Match 1">
-                    <img src="./assets/argentina2.jpg" alt="Match 2">
-                    <img src="./assets/argentina3.webp" alt="Match 3">
-                </div>
-                <img src="./assets/argentina.svg" alt="Argentina" class="flag">
-                <div class="name">Argentina</div>
-                <div class="podium-block second">2</div>
+    <header class="masthead">
+        <div class="shell masthead-inner">
+            <a class="wordmark" href="index.html">
+                <svg class="wordmark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9"/>
+                    <path d="M12 7.2l3.4 2.5-1.3 4H9.9l-1.3-4L12 7.2z"/>
+                    <path d="M12 3v4.2M3.6 9.4l5 .3M20.4 9.4l-5 .3M7.3 19.8l2.6-3.6M16.7 19.8l-2.6-3.6"/>
+                </svg>
+                <span>World Cup Podium</span>
             </a>
-
-            <!-- First Place -->
-            <a href="spain.html" class="team">
-                <div class="carousel">
-                    <img src="./assets/spain1.jpg" alt="Match 1">
-                    <img src="./assets/spain2.jpg" alt="Match 2">
-                    <img src="./assets/spain3.jpg" alt="Match 3">
-                </div>
-                <img src="./assets/spain.svg" alt="Spain" class="flag">
-                <div class="name">Spain</div>
-                <div class="podium-block first">1</div>
-            </a>
-
-            <!-- Third Place -->        
-            <a href="england.html" class="team">
-                <div class="carousel">
-                    <img src="./assets/inglaterra1.jpg" alt="Match 1">
-                    <img src="./assets/inglaterra2.jpg" alt="Match 2">
-                    <img src="./assets/inglaterra3.webp" alt="Match 3">
-                </div>
-                <img src="./assets/england.svg" alt="England" class="flag">
-                <div class="name">England</div>
-                <div class="podium-block third">3</div>
-            </a>
+            <div class="masthead-meta">
+                <span>Copa do Mundo FIFA 2026</span>
+                <span class="masthead-sep" aria-hidden="true"></span>
+                <span>Pódio Final</span>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="shell">
+                <p class="eyebrow">Copa do Mundo FIFA 2026</p>
+                <h1 class="hero-title">Pódio<br>Final</h1>
+                <p class="hero-lead">
+                    As três seleções que chegaram ao topo do torneio. Três campanhas,
+                    três histórias — e um único troféu.
+                </p>
+
+                <dl class="hero-stats">
+                    <div class="hero-stat">
+                        <dt>Seleções</dt>
+                        <dd>03</dd>
+                    </div>
+                    <div class="hero-stat">
+                        <dt>Títulos somados</dt>
+                        <dd>05</dd>
+                    </div>
+                    <div class="hero-stat">
+                        <dt>Confederações</dt>
+                        <dd>02</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section class="standings">
+            <div class="shell">
+                <div class="section-head">
+                    <h2 class="section-title">Classificação Final</h2>
+                    <span class="section-note">Top 3</span>
+                </div>
+
+                <div class="podium">
+
+                    <!-- Second Place -->
+                    <a href="argentina.html" class="team rank-2">
+                        <div class="team-top">
+                            <span class="team-code">ARG</span>
+                            <span class="team-index">02</span>
+                        </div>
+
+                        <div class="carousel">
+                            <img src="./assets/argentina1.jpg" alt="Argentina em partida — imagem 1">
+                            <img src="./assets/argentina2.jpg" alt="Argentina em partida — imagem 2">
+                            <img src="./assets/argentina3.webp" alt="Argentina em partida — imagem 3">
+                        </div>
+
+                        <div class="team-identity">
+                            <img src="./assets/argentina.svg" alt="Bandeira da Argentina" class="flag">
+                            <div class="team-names">
+                                <div class="name">Argentina</div>
+                                <div class="team-meta">3 títulos mundiais</div>
+                            </div>
+                        </div>
+
+                        <div class="podium-block second">
+                            <span class="podium-num">2</span>
+                            <span class="podium-label">Lugar</span>
+                        </div>
+                    </a>
+
+                    <!-- First Place -->
+                    <a href="spain.html" class="team rank-1">
+                        <div class="team-top">
+                            <span class="team-code">ESP</span>
+                            <span class="team-index">01</span>
+                        </div>
+
+                        <div class="carousel">
+                            <img src="./assets/spain1.jpg" alt="Espanha em partida — imagem 1">
+                            <img src="./assets/spain2.jpg" alt="Espanha em partida — imagem 2">
+                            <img src="./assets/spain3.jpg" alt="Espanha em partida — imagem 3">
+                        </div>
+
+                        <div class="team-identity">
+                            <img src="./assets/spain.svg" alt="Bandeira da Espanha" class="flag">
+                            <div class="team-names">
+                                <div class="name">Spain</div>
+                                <div class="team-meta">1 título mundial</div>
+                            </div>
+                        </div>
+
+                        <div class="podium-block first">
+                            <span class="podium-num">1</span>
+                            <span class="podium-label">Lugar</span>
+                        </div>
+                    </a>
+
+                    <!-- Third Place -->
+                    <a href="england.html" class="team rank-3">
+                        <div class="team-top">
+                            <span class="team-code">ENG</span>
+                            <span class="team-index">03</span>
+                        </div>
+
+                        <div class="carousel">
+                            <img src="./assets/inglaterra1.jpg" alt="Inglaterra em partida — imagem 1">
+                            <img src="./assets/inglaterra2.jpg" alt="Inglaterra em partida — imagem 2">
+                            <img src="./assets/inglaterra3.webp" alt="Inglaterra em partida — imagem 3">
+                        </div>
+
+                        <div class="team-identity">
+                            <img src="./assets/england.svg" alt="Bandeira da Inglaterra" class="flag">
+                            <div class="team-names">
+                                <div class="name">England</div>
+                                <div class="team-meta">1 título mundial</div>
+                            </div>
+                        </div>
+
+                        <div class="podium-block third">
+                            <span class="podium-num">3</span>
+                            <span class="podium-label">Lugar</span>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <span>World Cup Podium</span>
+            <span>Copa do Mundo FIFA 2026</span>
+            <span>HTML &amp; CSS</span>
+        </div>
+    </footer>
 
 </body>
 </html>

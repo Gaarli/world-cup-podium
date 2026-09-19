@@ -3,33 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inglaterra - World Cup Podium</title>
+    <title>Inglaterra — World Cup Podium</title>
+    <meta name="description" content="Inglaterra, terceira colocada da Copa do Mundo FIFA 2026: perfil do país, títulos mundiais e momentos icônicos.">
+    <meta name="theme-color" content="#08080A">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2308080A'/%3E%3Ccircle cx='16' cy='16' r='8' fill='none' stroke='%23BF8558' stroke-width='2'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="country.css">
 </head>
 <body class="england-page">
 
-    <div class="container">
-        <!-- Back Button -->
-        <a href="index.html" class="back-btn">
-            <span>←</span> Voltar ao Pódio
-        </a>
+    <header class="masthead">
+        <div class="shell masthead-inner">
+            <a href="index.html" class="back-btn">
+                <span aria-hidden="true">←</span> Voltar ao Pódio
+            </a>
+            <div class="masthead-meta">
+                <span>World Cup Podium</span>
+                <span class="masthead-sep" aria-hidden="true"></span>
+                <span>Copa do Mundo FIFA 2026</span>
+            </div>
+        </div>
+    </header>
 
-        <!-- Glass Main Card -->
-        <main class="glass-card">
-            <!-- Header: Flag & Title -->
-            <header class="card-header">
-                <img src="./assets/england.svg" alt="Bandeira da Inglaterra" class="flag">
-                <div class="title-area">
-                    <h1>Inglaterra</h1>
-                    <div class="sub-title">3ª Colocada</div>
-                </div>
-            </header>
+    <main class="shell page">
 
-            <!-- Quick Stats Grid -->
-            <section class="stats-grid">
+        <!-- Header: Title & Flag -->
+        <header class="card-header">
+            <div class="title-area">
+                <p class="sub-title">3ª Colocada</p>
+                <h1>Inglaterra</h1>
+            </div>
+            <img src="./assets/england.svg" alt="Bandeira da Inglaterra" class="flag">
+        </header>
+
+        <div class="page-grid">
+
+            <!-- Quick Stats -->
+            <aside class="stats-grid">
                 <!-- Location -->
                 <div class="stat-item">
-                    <span class="stat-icon">📍</span>
+                    <span class="stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                            <path d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/>
+                            <circle cx="12" cy="10" r="2.6"/>
+                        </svg>
+                    </span>
                     <div class="stat-details">
                         <span class="stat-label">Localização</span>
                         <span class="stat-value">Noroeste da Europa</span>
@@ -38,14 +58,22 @@
 
                 <!-- World Cup Titles -->
                 <div class="stat-item">
-                    <span class="stat-icon">🏆</span>
+                    <span class="stat-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                            <path d="M7 3.5h10V9a5 5 0 0 1-10 0V3.5Z"/>
+                            <path d="M7 5H4.5A2.5 2.5 0 0 0 7 9.5"/>
+                            <path d="M17 5h2.5A2.5 2.5 0 0 1 17 9.5"/>
+                            <path d="M12 14v3.5"/>
+                            <path d="M8.5 20.5h7"/>
+                        </svg>
+                    </span>
                     <div class="stat-details">
                         <span class="stat-label">Títulos Mundiais</span>
                         <span class="stat-value">1 Título</span>
                         <span class="stars" title="Campeã em 1966">★</span>
                     </div>
                 </div>
-            </section>
+            </aside>
 
             <!-- General Info and History Narrative -->
             <section class="content-section">
@@ -64,23 +92,33 @@
                 </div>
             </section>
 
-            <!-- Interactive Gallery -->
-            <section class="gallery-section">
-                <h2>Momentos Icônicos</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="./assets/inglaterra1.jpg" alt="Inglaterra Partida Imagem 1">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./assets/inglaterra2.jpg" alt="Inglaterra Partida Imagem 2">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./assets/inglaterra3.webp" alt="Inglaterra Partida Imagem 3">
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+        </div>
+
+        <!-- Interactive Gallery -->
+        <section class="gallery-section">
+            <h2>Momentos Icônicos</h2>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="./assets/inglaterra1.jpg" alt="Inglaterra em partida — imagem 1">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./assets/inglaterra2.jpg" alt="Inglaterra em partida — imagem 2">
+                </figure>
+                <figure class="gallery-item">
+                    <img src="./assets/inglaterra3.webp" alt="Inglaterra em partida — imagem 3">
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <span>World Cup Podium</span>
+            <span>3º Lugar · Inglaterra</span>
+            <span><a href="index.html">Voltar ao Pódio</a></span>
+        </div>
+    </footer>
 
 </body>
 </html>
